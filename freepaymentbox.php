@@ -45,14 +45,14 @@ class Freepaymentbox extends PaymentModule {
         // 2 prod secours
         if (Context::getContext()->getMobileDevice() == FALSE)
         {
-            $this->pb_url = array('0' => 'https://preprod-tpeweb.paybox.com/cgi/MYchoix_pagepaiement.cgi',
+            $this->pb_url = array('0' => 'https://tpeweb.paybox.com/cgi/MYchoix_pagepaiement.cgi',
             '1' => 'https://tpeweb.paybox.com/cgi/MYchoix_pagepaiement.cgi',
             '2' => 'https://tpeweb1.paybox.com/cgi/MYchoix_pagepaiement.cgi'
             );
         }
         else
         {
-            $this->pb_url = array('0' => 'https://preprod-tpeweb.paybox.com/cgi/ChoixPaiementMobile.cgi',
+            $this->pb_url = array('0' => 'https://tpeweb.paybox.com/cgi/ChoixPaiementMobile.cgi',
             '1' => 'https://tpeweb.paybox.com/cgi/ChoixPaiementMobile.cgi',
             '2' => 'https://tpeweb1.paybox.com/cgi/ChoixPaiementMobile.cgi'
             );
